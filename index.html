@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <video id="video-bg" autoplay muted loop>
+        <source src="videobg.mp4" type="video/mp4">
+      </video>
+      
+      <div id="container">
+        <h1>Confira o clima de uma cidade:</h1>
+        <div id="pesquisa-container">
+            <input type="search" id="pesquisa" name="pesquisa" placeholder="Digite sua pesquisa..." autocomplete="off"/>
+            <button type="submit" id="btnPesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        
+        <img src="load.gif" alt="" id="load">
+
+
+        <span id="dados">
+            
+        </span>
+        <span id="temp">
+        
+        </span>
+        <span id="clima">
+            
+        </span>
+
+        <footer>
+            <p id="humidade">
+
+            </p>
+            <p id="vento">
+
+            </p>
+        </footer>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
