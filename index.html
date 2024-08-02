@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
-</head>
-
-<body>
-    <video id="video-bg" autoplay muted loop>
-        <source src="videobg.mp4" type="video/mp4">
-      </video>
-      
-      <div id="container">
-        <h1>Confira o clima de uma cidade:</h1>
-        <div id="pesquisa-container">
-            <input type="search" id="pesquisa" name="pesquisa" placeholder="Digite sua pesquisa..." autocomplete="off"/>
-            <button type="submit" id="btnPesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <title>Climex</title>
+  </head>
+  <body>
+    <main>
+        
+      <div class="container">
+        <div class="search-container">
+          <input class="input" placeholder="Buscar cidade/país" id="search" />
+          <button id="searchBtn">></button>
         </div>
-        
-        <img src="load.gif" alt="" id="load">
-
-
-        <span id="dados">
-            
-        </span>
-        <span id="temp">
-        
-        </span>
-        <span id="clima">
-            
-        </span>
-
-        <footer>
-            <p id="humidade">
-
-            </p>
-            <p id="vento">
-
-            </p>
-        </footer>
-
-    </div>
-
-
-
+        <div id="result-container">
+            <div id="loader">
+                <div class="loaderMiniContainer">
+                  <div class="barContainer">
+                    <span class="bar"></span>
+                    <span class="bar bar2"></span>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 101 114"
+                    class="svgIcon"
+                  >
+                    <circle
+                      stroke-width="7"
+                      stroke="black"
+                      transform="rotate(36.0692 46.1726 46.1727)"
+                      r="29.5497"
+                      cy="46.1727"
+                      cx="46.1726"
+                    ></circle>
+                    <line
+                      stroke-width="7"
+                      stroke="black"
+                      y2="111.784"
+                      x2="97.7088"
+                      y1="67.7837"
+                      x1="61.7089"
+                    ></line>
+                  </svg>
+                </div>
+              </div>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
